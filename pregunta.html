@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01000010</title>
+
+    <!--ARCHIVOS CSS-->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/config.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+<script>
+    function mueveElBoton(){
+        const width =window.innerWidth;
+        const height = window.innerHeight;
+        
+        const newWidth = Math.random() * width;
+        const newHeight = Math.random() * height;
+
+        const btnNo = document.getElementById("btnNo");
+        btnNo.style.position = "absolute";
+        btnNo.style.left = newWidth + "px";
+        btnNo.style.top = newHeight + "px";
+    }
+</script>
+
+</head>
+<body>
+
+    <div class="pantalla">
+        <header class="header">
+            <img src="./img/tulip.png" alt="" class="icono">
+            <h2 class="user">
+                Siguiente Paso...
+            </h2>
+        </header>
+        <main class="contenido">
+            <div class="icono">
+                <a href="./index.html"><img src="./img/arrow_back_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+            </div>
+
+            <div id="buttons" class="btn">
+                <button> <a href="./si.html" class="respuesta">Si</a></button>
+                <button id="btnNo" onmouseover="mueveElBoton()">No</button>
+            </div>
+
+            <div class="ftos">
+                <img src="./img/Screenshot_20230907_172851_edit_870676648947289.jpg" alt="" class="itemFto">
+            </div>
+        </main>
+        <footer class="footer">
+            Page created by: D2007 <br>
+            Ig: D2007._
+        </footer>
+    </div>
+</div>
+    
+</body>
+</html>
